@@ -1,6 +1,7 @@
 #pipeline name /workflow name 
 name: First workflow
 #set trigger
+
 on:
    push:
        branches:
@@ -8,8 +9,8 @@ on:
 
 #create jobs
 jobs: 
-    print message:
-    run-on: ubuntu-latest
+    print-message:
+    runs-on: ubuntu-latest
     steps:
             # step1
             - name: print welcome message 
