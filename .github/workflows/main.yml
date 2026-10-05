@@ -1,1 +1,20 @@
+#pipeline name /workflow name 
+name: First workflow
+#set trigger
+on:
+   push:
+       branches:
+            -main
 
+#create jobs
+jobs: 
+    print message:
+        run-on:ubuntu-latest
+
+        steps:
+            #step1
+            - name: print welcome message 
+              runs:echo 'welcome to gitub action'
+            #step2
+            - name: print hello message 
+              runs:echo 'hello message '
