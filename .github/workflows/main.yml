@@ -5,16 +5,16 @@ name: First workflow
 on:
    push:
        branches:
-            -main
+            - main
 
 #create jobs
 jobs: 
     print-message:
-    runs-on: ubuntu-latest
-    steps:
+        runs-on: ubuntu-latest
+        steps:
             # step1
             - name: print welcome message 
-              runs: echo 'welcome to gitub action'
+              run: echo 'welcome to gitub action'
             # step2
             - name: print hello message 
-              runs: echo 'hello message '
+              run: echo 'hello message '
