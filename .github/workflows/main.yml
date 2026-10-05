@@ -3,7 +3,7 @@ name: First workflow
 #set trigger
 
 on:
-    workflow_dispatch:
+   workflow_dispatch:
 
 #create jobs
 jobs: 
